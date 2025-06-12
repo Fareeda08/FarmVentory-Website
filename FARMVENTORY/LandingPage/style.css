@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --black: #000000;
+  --Grey-3: #818181;
+  --Green: #00a859;
+  --Orange: #f58634;
+}
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+}
+
+header {
+  margin: 2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 11%;
+}
+
+.farmventory-nav a {
+  margin: 0 1.5rem;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+}
+
+header div {
+  width: 30%;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+header div h1 {
+  font-weight: 900;
+  font-size: 2.25rem;
+  margin-bottom: 0;
+}
+
+header div p {
+  font-size: 16px;
+  color: var(--Grey-3);
+  margin-top: 5px;
+}
+
+.login-btn {
+  background-color: var(--Green);
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--Green);
+  font: inherit;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.login-btn a {
+  color: white;
+}
+
+.mobileApp-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--Green);
+  font: inherit;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.mobileApp-btn a {
+  color: var(--Green);
+}
+
+main {
+  padding: 2rem;
+}
+
+.farmventory-offers{
+    background: linear-gradient(var(--Green), rgb(254, 253, 253));
+    margin: -2rem;
+    padding-top: 2rem;
+    padding-bottom: 16rem;
+}
+
+.farmventory-offers h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.farmventory-activities {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+.farmventory-activities div {
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  width: 15%;
+  border-radius: 15px;
+  box-shadow: 1px 1px 4px 4px #0000004f;
+}
+
+.farmventory-activities div p {
+  font-weight: bold;
+}
+
+.farmventory-activities div button {
+  font: inherit;
+  color: var(--Orange);
+  background-color: white;
+  padding: o.5rem 1rem;
+  border: 2px solid var(--Orange);
+  border-radius: 7px;
+}
+
+.farmventory-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.farmventory-app img {
+  width: 40%;
+}
+
+.farmventory-app div {
+  text-align: center;
+  width: 30%;
+}
+
+.farmventory-app div h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.farmventory-app div p {
+  color: var(--Grey-3);
+  margin-top: 2px;
+  margin-bottom: 2rem;
+}
+
+.farmventory-app div a {
+  padding: 0.5rem 1rem;
+  font: inherit;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+}

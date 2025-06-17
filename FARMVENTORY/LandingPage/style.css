@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap");
 
 :root {
   --black: #000000;
@@ -7,28 +8,54 @@
   --Orange: #f58634;
 }
 
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins";
   margin: 0;
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 header {
-  margin: 2rem;
+  padding-bottom: 5rem;
+}
+
+.background-image {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  top: -1%;
+  width: 63%;
+  height: 75%;
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 2rem;
 }
 
 nav img {
-  width: 11%;
+  width: 13%;
 }
 
 .farmventory-nav a {
   margin: 0 1.5rem;
   color: var(--black);
+}
+
+.farmventory-nav a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: var(--Green);
+  font-weight: 500;
 }
 
 a {
@@ -43,7 +70,7 @@ header div {
 
 header div h1 {
   font-weight: 900;
-  font-size: 2.25rem;
+  font-size: 3rem;
   margin-bottom: 0;
 }
 
@@ -51,6 +78,18 @@ header div p {
   font-size: 16px;
   color: var(--Grey-3);
   margin-top: 5px;
+}
+
+.farm-inventory {
+  width: 50%;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.farm-inventory p {
+  width: 55%;
+  align-self: center;
 }
 
 .login-btn {
@@ -83,11 +122,11 @@ main {
   padding: 2rem;
 }
 
-.farmventory-offers{
-    background: linear-gradient(var(--Green), rgb(254, 253, 253));
-    margin: -2rem;
-    padding-top: 2rem;
-    padding-bottom: 16rem;
+.farmventory-offers {
+  background: linear-gradient(var(--Green), rgb(254, 253, 253));
+  margin: -2rem;
+  padding-top: 2rem;
+  padding-bottom: 16rem;
 }
 
 .farmventory-offers h2 {
@@ -158,4 +197,292 @@ main {
   color: black;
   border: 2px solid black;
   border-radius: 10px;
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  margin: 7rem 0;
+  font-family: Comme;
+}
+
+.testimonial-yoruba,
+.testimonial-english,
+.testimonial-hausa {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  box-shadow: 2px 7px 19px 9px #0000001a;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.testimonial-english {
+  position: relative;
+  left: -15%;
+  width: 50%;
+  opacity: 0.5;
+}
+
+.testimonial-yoruba {
+  height: 60%;
+  width: 95%;
+}
+
+.testimonial-hausa {
+  position: relative;
+  right: -15%;
+  width: 50%;
+  opacity: 0.5;
+}
+
+.testimonial-yoruba div {
+  padding: 4rem;
+}
+
+.testimonial-english div {
+  padding: 1rem;
+}
+
+.testimonial-hausa div {
+  padding: 1rem;
+}
+
+.testimonial-yoruba div,
+.testimonial-english div,
+.testimonial-hausa div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 0;
+  width: 50%;
+}
+
+.testimonial-yoruba .quotes,
+.testimonial-english .quotes,
+.testimonial-hausa .quotes {
+  width: 8%;
+  margin-bottom: 2rem;
+}
+
+.testimonial-yoruba .image,
+.testimonial-english .image,
+.testimonial-hausa .image {
+  width: 45%;
+  margin-left: 2rem;
+}
+
+.testimonial-english .comments,
+.testimonial-hausa .comments {
+  margin-bottom: 3rem;
+}
+
+.testimonial-yoruba .comments {
+  margin-bottom: 4.5rem;
+}
+
+.comments {
+  font-weight: 500;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.job {
+  margin-top: 0;
+}
+
+.arrow-left {
+  position: absolute;
+  z-index: 2;
+  bottom: -93rem;
+  left: 5rem;
+}
+
+.arrow-right {
+  position: absolute;
+  right: 5rem;
+  bottom: -93rem;
+}
+
+.GetStarted {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.GetStarted h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.GetStarted p {
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+.GetStarted div {
+  margin-top: 4rem;
+}
+
+.getStarted-login,
+.getStarted-app {
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  margin: 0 0.5rem;
+  font: inherit;
+  border: 2px solid;
+}
+
+.getStarted-login {
+  background-color: var(--Orange);
+  border-color: var(--Orange);
+}
+
+.getStarted-login a {
+  color: white;
+}
+
+.getStarted-app {
+  border-color: var(--Orange);
+  background-color: white;
+}
+
+.getStarted-app a {
+  color: var(--Orange);
+}
+
+footer {
+  background: linear-gradient(white, var(--Green));
+  padding: 5rem;
+  padding-bottom: 1rem;
+}
+
+footer .firstChild {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 9rem;
+}
+
+.firstChild img {
+  width: 20%;
+}
+
+.more-about-farmventory {
+  width: 30%;
+}
+
+.nestedChild {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nestedChild p {
+  margin: 5px;
+  font-weight: 500;
+}
+
+.about-farmventory,
+.support {
+  font-weight: 700 !important;
+}
+
+.follow-us {
+  font-weight: 500;
+}
+
+.socials {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials img {
+  margin-right: 1rem;
+}
+
+.copyright {
+  font-weight: 500;
+}
+
+@media (max-width: 40rem) {
+  main {
+    padding: 1rem;
+  }
+
+  .farmventory-nav {
+    display: none;
+  }
+
+  .farmventory-activities {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .farmventory-activities div {
+    width: 80%;
+    margin: 2rem 0;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    display: none;
+  }
+
+  .farmventory-app {
+    flex-direction: column;
+  }
+
+  .farmventory-offers h2 {
+    font-size: 1.7rem;
+    width: 100%;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-english,
+  .testimonial-hausa,
+  .testimonial-yoruba {
+    flex-direction: column-reverse;
+  }
+
+  .testimonials div {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .testimonial-english {
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }
+
+  .testimonial-yoruba {
+    height: 60%;
+  }
+
+  .testimonial-hausa {
+    position: relative;
+    right: 0;
+    opacity: 1;
+  }
+
+  .testimonial-english div,
+  .testimonial-hausa div,
+  .testimonial-yoruba div {
+    padding: 1.5rem !important;
+  }
+
+  .testimonial-yoruba .image,
+  .testimonial-english .image,
+  .testimonial-hausa .image {
+    width: 100%;
+    margin-left: 0;
+  }
 }

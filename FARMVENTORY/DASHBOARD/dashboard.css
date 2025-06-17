@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --Grey-3: #eaedec;
+  --Grey-5: #53505080;
+  --Grey-4: #818181;
+  --Green: #00a859;
+  --Dark-Green: #236a49;
+  --Orange: #f58634;
+}
+
+body {
+  font-size: 16px;
+  font-family: poppins;
+  margin: 0;
+}
+
+.welcome-back {
+  padding: 3rem 6rem;
+}
+
+.log-reminder {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.log-reminder p {
+  font-weight: 275;
+  font-size: 25px;
+  font-style: italic;
+  width: 80%;
+}
+
+.log-reminder button {
+  padding: 0.8rem 1rem;
+  background-color: var(--Orange);
+  border: 1px solid var(--Orange);
+  border-radius: 16px;
+  font: inherit;
+  color: white;
+  font-weight: 500;
+}
+
+.log-reminder button img {
+  vertical-align: middle;
+}
+
+.locations-production-earnings {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.location {
+  background-color: var(--Grey-3);
+  border-radius: 15px;
+  width: 25%;
+  padding: 0.5rem 1rem;
+}
+
+.farm-location {
+  background-color: var(--Green);
+  padding: 0.3rem 1rem;
+  border: 1px solid var(--Green);
+  border-radius: 31px;
+  color: white;
+  font-weight: 500;
+}
+
+.weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.log-day {
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+.degree-in-celsius {
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0;
+}
+
+.weather p img {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.weather-image-rep p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.production-overview {
+  background-color: var(--Grey-3);
+  padding: 0.5rem 0.5rem;
+  width: 30%;
+  height: 60%;
+  border-radius: 15px;
+}
+
+.monthly-overview,
+.monthly-overview div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.monthly-overview div {
+  align-items: flex-start;
+}
+
+.monthly-overview h4 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.monthly-overview p {
+  font-size: 14px;
+}
+
+.monthly-overview h4,
+.monthly-overview p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.total-harvest {
+  margin-left: 3rem;
+  height: 180px;
+}
+
+.yam-image-rep,
+.orange-image-rep,
+.maize-image-rep,
+.orange-base {
+  position: relative;
+}
+
+.maize-image-rep {
+  bottom: 150px;
+  z-index: 3;
+}
+
+.orange-image-rep {
+  bottom: 150px;
+  right: 86.5px;
+  z-index: 2;
+}
+
+.yam-image-rep {
+  bottom: 300px;
+}
+
+.orange-base {
+  bottom: 300px;
+  right: 280px;
+  z-index: 4;
+}
+
+.total-harvest span {
+  position: relative;
+  bottom: 350px;
+  left: 90px;
+}
+
+.total-harvest h3 {
+  font-size: 32px;
+  margin: 0;
+  line-height: 21px;
+  font-weight: 600;
+}
+
+.total-harvest p {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.harvest-rep {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.harvest-rep p {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.harvest-rep span {
+  margin-right: 0.5rem;
+}
+
+.color-rep {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border: 1px solid;
+  border-radius: 60px;
+}
+
+.yam-rep {
+  background-color: var(--Dark-Green);
+  border-color: var(--Dark-Green);
+}
+
+.orange-rep {
+  background-color: var(--Green);
+  border-color: var(--Green);
+}
+
+.maize-rep {
+  background-color: var(--Orange);
+  border-color: var(--Orange);
+}
+
+.total-earnings-yam,
+.total-earnings-maize {
+  background-color: var(--Grey-3);
+  display: flex;
+  padding: 0.3rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--Grey-3);
+  border-radius: 19px;
+  margin: 0.9rem 0;
+  width: 100%;
+}
+
+.total-earnings-yam {
+  box-shadow: 0px 2px 4px 0px var(--Green);
+}
+
+.total-earnings-maize {
+  box-shadow: 0px 2px 4px 0px var(--Orange);
+}
+
+.total-earnings-yam h4,
+.total-earnings-maize h4 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.total-earnings-yam p,
+.total-earnings-maize p,
+.total-earnings-maize h3,
+.total-earnings-yam h3 {
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.total-earnings-maize h3,
+.total-earnings-yam h3 {
+  font-size: 40px;
+  margin-bottom: 0;
+  height: 55px;
+}
+
+.manage-your-farms {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 6rem;
+}
+
+.all-farms {
+  width: 60%;
+  height: 500px;
+}
+
+.view-all-farms {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#manage-farms {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+#view {
+  color: var(--Grey-4);
+  font-weight: 400;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.maize {
+  z-index: -2;
+  bottom: 100px;
+  left: 70px;
+}
+
+.orange {
+  z-index: -3;
+  bottom: 300px;
+  left: 140px;
+}
+
+.kishi-area,
+.zara-village {
+  border-radius: 28px;
+  padding-top: 1.6rem;
+  width: 83%;
+  height: 18.4%;
+  margin: 2rem;
+  margin-left: 0;
+  margin-top: 0;
+  position: relative;
+}
+
+.orange {
+  box-shadow: 0px 4px 4px 0px var(--Grey-3);
+}
+
+.kishi-area h3,
+.zara-village h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0 2.5rem;
+}
+
+.yam-img,
+.maize-img,
+.orange-img {
+  position: relative;
+  z-index: -1;
+  bottom: 70px;
+  filter: brightness(50%);
+}
+
+.yam-barn,
+.orange-field,
+.maize-field {
+  background-color: white;
+  padding: 1rem 2.5rem;
+  margin: 2rem 0.5rem;
+  border-radius: 28px;
+  z-index: 3;
+  position: relative;
+  bottom: 285px;
+}
+
+.maize-field{
+  bottom: 340px;
+}
+
+.more-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.more-details p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.more-details p img {
+  vertical-align: middle;
+}
+
+.more {
+  border: 1px solid var(--Grey-5);
+  border-radius: 5px;
+  padding: 0.4rem 0.5rem;
+  color: var(--Grey-4);
+  text-align: center;
+}
+
+.yam-update,
+.maize-update,
+.orange-update {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yam-update div,
+.maize-update div,
+.orange-update div {
+  border: 1px solid var(--Grey-5);
+  border-radius: 5px;
+  padding: 0rem 0.6rem;
+}
+
+.yam-update p,
+.maize-update p,
+.orange-update p {
+  font-size: 12px;
+  color: var(--Grey-4);
+  font-weight: 400;
+  margin: 8px;
+  margin-bottom: 5px;
+}
+
+.yam-update h4,
+.maize-update h4,
+.orange-update h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 5px;
+}
+
+.input-logged-report {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  margin-top:2.5rem;
+}
+
+.input-logged-report h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 55%;
+  margin-bottom: 0;
+  margin-top: 10px;
+  line-height: 21px;
+}
+
+.month {
+  margin-top: 0;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.input-and-earnings div,
+.harvest-and-stock_alerts div {
+  border: 1px solid var(--Grey-3);
+  padding: 0.3rem 1rem;
+  background-color: var(--Grey-3);
+  margin: 1rem 0;
+  border-radius: 30px;
+  width: 86%;
+}
+
+.input-and-earnings div {
+  box-shadow: 0px 2px 4px 0px var(--Green);
+}
+
+.harvest-and-stock_alerts div:nth-child(1) {
+  box-shadow: 0px 2px 4px 0px var(--Green);
+}
+
+.harvest-and-stock_alerts div:nth-child(2) {
+  box-shadow: 0px 2px 4px 0px var(--Orange);
+}
+
+.stocks {
+  margin:1rem  0;
+}
+
+.no-of-input-stocks,
+.total-earnings,
+.harvest-logged-in-kg,
+.no-of-low-stock {
+  font-weight: 700;
+  font-size: 3rem;
+  vertical-align: baseline;
+  line-height: 25px;
+}
+
+.percentage-increase,
+.percentage-decrease {
+  padding: 0.1rem 0rem;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid;
+  width: 32%;
+  margin: 0;
+  font-size: 14px;
+}
+
+.percentage-decrease img,
+.percentage-increase img {
+  vertical-align: middle;
+}
+
+.percentage-increase {
+  border-color: var(--Green);
+  color: var(--Green);
+}
+
+.percentage-decrease {
+  border-color: var(--Orange);
+  color: var(--Orange);
+}
+
+.last-month {
+  font-size: 14px;
+  color: var(--Grey-4);
+}
+
+.alerts-summary {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  align-items: center;
+}
+
+.harvest-summary,
+.active-alerts {
+  background-color: var(--Grey-3);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 40%;
+  height: 60%;
+  padding-top: 0.5rem;
+}
+
+.active-alerts {
+  padding-bottom: 1rem;
+}
+
+.active-alerts h3,
+.harvest-summary h3 {
+  font-size: 24px;
+  margin-bottom: 9px;
+  font-weight: 600;
+}
+
+.active-alerts .add-task {
+  padding: 0.3rem 1rem;
+  background-color: var(--Green);
+  font: inherit;
+  font-size: 14px;
+  color: white;
+  border: 1px solid var(--Green);
+  border-radius: 5px;
+}
+
+.active-alerts .task {
+  margin: 1rem 0;
+}
+
+.assigned-date {
+  font-size: 14px;
+  color: var(--Green);
+}
+
+.task button {
+  padding: 0.3rem 1rem;
+  font: inherit;
+  font-size: 14px;
+  color: var(--Orange);
+  border: 2px solid var(--Orange);
+  border-radius: 5px;
+}
+
+.active-alerts p {
+  margin: 2px;
+}
+
+.harvest-summary p {
+  font-size: 20px;
+  margin: 13px;
+}
+
+.harvest,
+.active-alerts div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.harvest img {
+  vertical-align: middle;
+  margin-right: 1rem;
+}

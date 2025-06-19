@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --Green: #00A859;
+  --orange: #F58634;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(/img/96a1ad18af928fd5d588810f71f020e8335b7e1d.jpg) no-repeat top center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+input {
+  all: unset;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  background-color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login h2 {
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem 0 2rem;
+  font-size: 1.5rem;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.form-control {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  
+}
+
+.form-control:focus {
+  box-shadow: 0px 0px 3px 2px var(--Green);
+  border: 1px solid transparent;
+}
+
+/* Password wrapper and eye */
+.password-wrapper {
+  position: relative;
+  display: flex;
+    width: 100%;
+  align-items: center;
+}
+
+.password-wrapper input {
+  padding-right: 2.5rem;
+  width: 100%;
+}
+
+.password-wrapper img {
+  position: absolute;
+  right: 0.8rem;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+  -webkit-transition: filter 0.3s ease;
+  -moz-transition: filter 0.3s ease;
+  -ms-transition: filter 0.3s ease;
+  -o-transition: filter 0.3s ease;
+}
+
+.password-wrapper img.active {
+    filter: drop-shadow(0 0px 3px var(--Green));
+    -webkit-filter: drop-shadow(0 0px 3px var(--Green));
+}
+
+/* Submit Button */
+.submit {
+  padding: 0.7rem;
+  margin-top: 1rem;
+  background-color: var(--Green);
+  font-size: 1rem;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.submit:hover {
+  background-color: #008a48;
+}
+
+.form-message {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-message a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--Green);
+  font-weight: 500;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 480px) {
+  .login {
+    padding: 1.5rem;
+    max-width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .login h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-control,
+  .submit {
+    font-size: 0.95rem;
+  }
+
+  .password-wrapper img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .form-message {
+    font-size: 0.85rem;
+  }
+}
